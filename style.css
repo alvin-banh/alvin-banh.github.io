@@ -1,0 +1,130 @@
+body {
+  font-family: Avenir, "Times New Roman", Times, serif;
+  background-color: #add8e6;
+  }
+
+h1{
+  text-align: center;
+  background-color: #6ea8eb;
+  border-radius: 20px;
+  }
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #6ea8eb;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #6b9ed0;
+  border-radius: 20px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #4d85bd;
+}
+
+nav a.active {
+  background-color: #426385;
+}
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100v;
+  text-align: center;
+}
+
+.resume-button {
+  background-color: #6aa0dd;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.resume-button:hover {
+  background-color: #357ABD;
+}
+
+.resume-button:active {
+  background-color: #285A8C;
+}
+
+img {
+  display: block;
+  margin: 30px auto;
+  height: 150px; 
+  width: 150px;
+  border-radius: 100px;
+  object-fit: cover;
+  max-width: 80vw;
+  }
+p {
+  max-width: 600px;
+  margin: 10px auto;
+  text-align: left;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item {
+  background-color: #add8e6;
+}
+
+@media print {
+  body {
+      background-color: #fff;
+      color: #000;
+  }
+  
+  nav {
+      display: none;
+  }
+}
+
+html[lang="ar"],
+html[lang="he"],
+html[lang="fa"],
+html[lang="ur"],
+html[lang="dv"],
+html[lang="ps"],
+html[lang="ckb"],
+html[lang="sd"],
+html[lang="ug"],
+html[lang="yi"] {
+    direction: rtl;
+    text-align: right;
+}
+
+html[lang="ar"] p,
+html[lang="he"] p,
+html[lang="fa"] p,
+html[lang="ur"] p,
+html[lang="dv"] p,
+html[lang="ps"] p,
+html[lang="ckb"] p,
+html[lang="sd"] p,
+html[lang="ug"] p,
+html[lang="yi"] p{
+    text-align: right;
+}

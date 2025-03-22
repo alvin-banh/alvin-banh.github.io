@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+
+    .container {
+      display: flex;
+      height: 90vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item {
+      background-color: #c3e2ff;
+      border: 2px solid #4A90E2;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 2px solid #4A90E2;
+      border-radius: 20px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4A90E2;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #357ABD;
+    }
+
+    .friendly-message {
+      margin-bottom: 15px;
+      font-style: italic;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <nav>
+      <a href="index.html"> Home </a>
+      <a href="cv.html"> CV </a>
+      <a href="contact.html"> Contact </a>
+      <a href="portfolio.html"> Portfolio </a>
+    </nav>
+
+    <div class="container">
+      <div class="item">
+        <h2>Get in Touch!</h2>
+        <p class="friendly-message">
+          I'd love to hear from you. Drop me a message, and I'll get back to you soon!
+        </p>
+        <form action="mailto:albanh@mit.edu">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" />
+          <label for="message">Message</label>
+          <textarea id="message" name="body"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
