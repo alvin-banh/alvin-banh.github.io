@@ -61,6 +61,9 @@ body {
   padding: 0;
   border: 2px solid rgb(255, 255, 255); 
 }
+.cat {
+  cursor: grab; 
+}
 
 .navbar a {
   text-decoration: none;
@@ -84,7 +87,7 @@ body {
 
 .main-content {
   width: 80%;
-  padding: 20px;
+  padding: 50px;
   box-sizing: border-box;
   background-color: #e9edf3;
   text-transform: lowercase;
@@ -102,6 +105,7 @@ h1 {
 }
 
 p {
+  padding: 25px;
   max-width: 600px;
   margin: 10px auto;
   text-align: left;
