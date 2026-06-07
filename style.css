@@ -1,0 +1,217 @@
+
+body {
+  font-family: Avenir, "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-list, .blog-list li{
+  list-style: none;
+  padding: 3px;
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.blog-list a {
+  text-decoration: none;
+  color: #354f6d;
+  background-color: #e0e7ef;
+  padding: 10px 15px;
+  border-radius: 12px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.blog-content-list {
+  font-family: Avenir, "Times New Roman", Times, serif;
+  list-style: none;
+  text-decoration: none;
+  font-size: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.blog-list a:hover {
+  background-color: #b1c3d7;
+  color: #000;
+}
+.page-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.navbar {
+  width: 20%;
+  background-color: #748aa9;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #ccc;
+}
+.frieren{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: 1;
+  padding: 0;
+  border: 2px solid rgb(255, 255, 255); 
+}
+.cat {
+  cursor: grab; 
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #4d85bd;
+}
+
+.navbar a.active {
+  background-color: #224568;
+}
+
+.main-content {
+  width: 80%;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #e9edf3;
+  text-transform: lowercase;
+}
+
+h1 {
+  text-align: center;
+  font-size: 20px;
+  background-color: #354f6d;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  max-width: 200px;
+  margin: 0 auto;  
+}
+
+p {
+  padding: 25px;
+  max-width: 600px;
+  margin: 10px auto;
+  text-align: left;
+}
+
+@media print {
+  body {
+    background-color: #e9edf3;
+    color: #000;
+  }
+  
+  .navbar {
+    display: none;
+  }
+}
+.main-content {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+.gallery figure {
+  margin: 0;
+  max-width: 500px;
+}
+.gallery figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+css.main-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.item h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.item > p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.book {
+  /* keep what you have but make sure max-width is set */
+  max-width: 720px;
+  margin: 2rem auto;
+}
+
+.page {
+  text-align: left;
+}
+
+.page h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: lowercase; /* if you want "day 2" instead of "Day 2" */
+}
+
+.page ul,
+.page ol {
+  padding-left: 1.5rem;
+}
+
+/* Right-to-left languages handling */
+html[lang="ar"],
+html[lang="he"],
+html[lang="fa"],
+html[lang="ur"],
+html[lang="dv"],
+html[lang="ps"],
+html[lang="ckb"],
+html[lang="sd"],
+html[lang="ug"],
+html[lang="yi"] {
+  direction: rtl;
+  text-align: right;
+}
+
+html[lang="ar"] p,
+html[lang="he"] p,
+html[lang="fa"] p,
+html[lang="ur"] p,
+html[lang="dv"] p,
+html[lang="ps"] p,
+html[lang="ckb"] p,
+html[lang="sd"] p,
+html[lang="ug"] p,
+html[lang="yi"] p {
+  text-align: right;
+}
