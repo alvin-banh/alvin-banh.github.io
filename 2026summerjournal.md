@@ -34,8 +34,8 @@ still sick since final exams, taking a break and drawing, planning on posting mo
 making a markdown and parser to help streamline progress report, solves manually having to edit the html to add my notes here
 
 ## Day 5 - skimming all of modern robotics
-small asinine summary:
+small asinine summary (will add more):
 - open/closed chain: open (end to end joint connection), closed (links joints in a loop)
-- motor/robot paradigm: motor tend to be high RPM, low torque, w/ robots (e.g an arm)
+- motor/robot issues: motor tend to be high RPM, low torque, w/ robots (e.g an arm)
 needing low RPM, high torque
 - Grübler's Formula: $$\text{DOF} = m(N - 1 - J) + \sum_{i=1}^{J} f_i$$

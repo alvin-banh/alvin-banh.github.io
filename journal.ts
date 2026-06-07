@@ -92,10 +92,26 @@ function render(): void {
   if (!pageEl || !jumpEl || !prevEl || !nextEl) return;
   const s = sections[current];
   if (!s) return;
-  const hasList = /<(ul|ol)\b/.test(s.html);
-  pageEl.className = hasList ? 'doc-left' : 'doc-center';
+
   pageEl.innerHTML = `<h2>${s.title}</h2>${s.html}`;
   jumpEl.value = String(current);
   prevEl.disabled = current === 0;
   nextEl.disabled = current === sections.length - 1;
+
+  const hasList = /<(ul|ol)\b/.test(s.html);
+  pageEl.classList.remove('center', 'left');
+  pageEl.classList.add('page');
+
+  if (hasList) {
+    pageEl.classList.add('center');
+  } else {
+    const p = pageEl.querySelector('p');
+    if (p) {
+      const lineHeight = parseFloat(getComputedStyle(p).lineHeight);
+      const isOneLine = p.scrollHeight <= lineHeight * 1.5;
+      pageEl.classList.add(isOneLine ? 'center' : 'left');
+    } else {
+      pageEl.classList.add('center');
+    }
+  }
 }
