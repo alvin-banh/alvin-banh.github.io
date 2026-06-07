@@ -168,7 +168,6 @@ css.main-content {
 }
 
 .book {
-  /* keep what you have but make sure max-width is set */
   max-width: 720px;
   margin: 2rem auto;
 }
@@ -180,7 +179,7 @@ css.main-content {
 .page h2 {
   text-align: center;
   margin-bottom: 1rem;
-  text-transform: lowercase; /* if you want "day 2" instead of "Day 2" */
+  text-transform: lowercase; 
 }
 
 .page ul,
@@ -188,7 +187,6 @@ css.main-content {
   padding-left: 1.5rem;
 }
 
-/* Right-to-left languages handling */
 html[lang="ar"],
 html[lang="he"],
 html[lang="fa"],

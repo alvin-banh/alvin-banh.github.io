@@ -80,4 +80,3 @@ function render() {
     nextEl.disabled = current === sections.length - 1;
 }
 export {};
-//# sourceMappingURL=journal.js.map

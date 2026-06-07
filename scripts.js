@@ -20,11 +20,11 @@ document.addEventListener('click', (e) => {
     clickSound.play();
 
     if (target.tagName.toLowerCase() === 'a' && target.href) {
-      e.preventDefault(); // Stop immediate navigation
+      e.preventDefault(); 
       const href = target.href;
       setTimeout(() => {
         window.location.href = href;
-      }, 150); // Adjust delay if needed
+      }, 150);
     }
   }
 });
