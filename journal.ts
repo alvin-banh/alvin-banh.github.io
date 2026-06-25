@@ -21,6 +21,11 @@ const jumpEl = document.getElementById('jump') as HTMLSelectElement | null;
 const prevEl = document.getElementById('prev') as HTMLButtonElement | null;
 const nextEl = document.getElementById('next') as HTMLButtonElement | null;
 
+// Each HTML page sets `window.MD_FILE` before loading this script.
+// Falls back to a default if unset.
+const mdFile: string =
+  (window as unknown as { MD_FILE?: string }).MD_FILE ?? '2026summerjournal.md';
+
 if (pageEl && jumpEl && prevEl && nextEl) {
   init();
 }
@@ -51,7 +56,7 @@ function parseWithMath(body: string): string {
 }
 
 async function init(): Promise<void> {
-  const res = await fetch('2026summerjournal.md');
+  const res = await fetch(mdFile);
   const md = await res.text();
 
   const parts = md.split(/(?=^## )/m).filter(s => s.trim());

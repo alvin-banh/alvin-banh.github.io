@@ -4,6 +4,9 @@ const pageEl = document.getElementById('page');
 const jumpEl = document.getElementById('jump');
 const prevEl = document.getElementById('prev');
 const nextEl = document.getElementById('next');
+// Each HTML page sets `window.MD_FILE` before loading this script.
+// Falls back to a default if unset.
+const mdFile = window.MD_FILE ?? '2026summerjournal.md';
 if (pageEl && jumpEl && prevEl && nextEl) {
     init();
 }
@@ -30,7 +33,7 @@ function parseWithMath(body) {
     });
 }
 async function init() {
-    const res = await fetch('2026summerjournal.md');
+    const res = await fetch(mdFile);
     const md = await res.text();
     const parts = md.split(/(?=^## )/m).filter(s => s.trim());
     sections = parts.map(chunk => {

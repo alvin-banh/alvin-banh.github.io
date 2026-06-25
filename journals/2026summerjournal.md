@@ -1,7 +1,5 @@
 ## Statement of Purpose
-i like to make things!
-i truly believe engineering is the closest thing we have to magic.
-but lately, software engineering has been feeling more and more dead. 
+lately, software engineering has been feeling more and more dead. 
 i love learning, but doing so for extrinsic motivation and vanity
 has made me apathetic. because of this, i am going to take some time working on projects i've been mulling over. 
 if anything comes to fruition, great! 
