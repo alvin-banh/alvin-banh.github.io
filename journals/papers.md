@@ -19,3 +19,9 @@ accounting for uncertainty
 the integral of $p(y|x;\theta)q(\theta|D)$ with $d\theta$. $q(\theta|D)$ is our approximation of true weight posterior $p(\theta|D)$. if you are unfamiliar with what a true weight posterior is, it just means the ideal and exact probability distribution of weights.
 
 to be continued
+
+## The Story of RNA Folding, as Told in Epochs
+
+tldr: review of rna folding field, rna acts as its catalyst (RNA world) -> proteins enhance functionality -> 
+
+to be continued
